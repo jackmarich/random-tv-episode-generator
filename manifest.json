@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Random TV Episode Generator",
+    "version": "1.0",
+    "description": "Choose a TV show (and seasons) and have a random episode open immediately—and autoplay a new one after the current episode finishes.",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "permissions": [ "tabs" ],
+    "web_accessible_resources": [
+      {
+        "resources": ["episodeLists.json"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.hulu.com/watch/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
+  

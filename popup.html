@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Random TV Episode Generator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 300px;
+        margin: 10px;
+      }
+      select,
+      input[type="radio"],
+      label,
+      button {
+        margin: 5px;
+        font-size: 14px;
+      }
+      #seasonContainer {
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        max-height: 150px;
+        overflow-y: auto;
+        display: none;
+      }
+      #status {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Random TV Episode Generator</h2>
+    <label for="showSelect">Select Show:</label>
+    <select id="showSelect"></select>
+    <br />
+    <input type="radio" id="modeAll" name="mode" value="all" checked />
+    <label for="modeAll">All Episodes</label>
+    <input type="radio" id="modeSelected" name="mode" value="selected" />
+    <label for="modeSelected">Selected Seasons</label>
+    <div id="seasonContainer"></div>
+    <br />
+    <button id="pickBtn">Pick Random Episode</button>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
