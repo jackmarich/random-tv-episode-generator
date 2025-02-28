@@ -90,3 +90,5 @@ This project is open source.
 
 ## Contact
 If you have any questions or suggestions, please feel free to contact me.
+
+I do plan on adding functionality to automatically make the video player fullscreen, as well as make the random video player skip the end credits.
