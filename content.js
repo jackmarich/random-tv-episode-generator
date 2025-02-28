@@ -114,6 +114,12 @@
      * Handles the "timeupdate" event from the video element.
      * When 40 seconds or less remain in the video, triggers navigation to a new episode.
      * 
+     * IMPORTANT!! This currently doesn't work as intended, for some reason the extension 
+     * can't recognize when the video has 40 seconds left. It only changes the episode
+     * around the 15 second mark (or 8 seconds according to the extension). I am looking
+     * for a fix to this, but for now you must watch the entire end credit scene before
+     * a new episode.
+     * 
      * @param {Event} event - The timeupdate event
      */
     function onTimeUpdate(event) {
