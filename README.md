@@ -33,6 +33,15 @@ NOTE: As you will see, this project was created by manually adding each episode 
 5.  **Pick Random Episode:** Click the "Pick Random Episode" button. A new tab will open with the randomly selected episode.
 6.  **Autoplay:** When watching an episode on Hulu, the extension will automatically switch to a new random episode when the current episode is about to end.
 
+## Current Shows
+
+The following shows are currently available in the `episodeLists.json` file:
+
+* Family Guy (Seasons 1 and 23)
+* American Dad (Template, will add once Family Guy Is Complete)
+
+*Note: To add more shows, you may update the `episodeLists.json` file.*
+
 ## File Structure
 
 * `manifest.json`: The extension manifest file, defining the extension's metadata and permissions.
