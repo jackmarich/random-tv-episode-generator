@@ -1,25 +1,32 @@
 {
-    "manifest_version": 3,
-    "name": "Random TV Episode Generator",
-    "version": "1.0",
-    "description": "Choose a TV show (and seasons) and have a random episode open immediately—and autoplay a new one after the current episode finishes.",
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icon.png"
-    },
-    "permissions": [ "tabs" ],
-    "web_accessible_resources": [
-      {
-        "resources": ["episodeLists.json"],
-        "matches": ["<all_urls>"]
-      }
-    ],
-    "content_scripts": [
-      {
-        "matches": ["*://*.hulu.com/watch/*"],
-        "js": ["content.js"],
-        "run_at": "document_end"
-      }
-    ]
-  }
+  "manifest_version": 3,
+  "name": "Random TV Episode Generator",
+  "version": "1.0",
+  "description": "Choose a TV show (and seasons) and have a random episode open immediately—and autoplay a new one after the current episode finishes.",
   
+  "icons": {
+    "16": "icons/stormy.png",
+    "48": "icons/stormy.png",
+    "128": "icons/stormy.png"
+  },
+  
+  "action": {
+    "default_title": "Random TV Episode Generator",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/stormy.png",
+      "48": "icons/stormy.png",
+      "128": "icons/stormy.png"
+    }
+  },
+
+  "permissions": ["tabs"],
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.hulu.com/watch/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
